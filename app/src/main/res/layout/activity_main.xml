@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingresa una frase corta (ej. El gato duerme)"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/buttonTTS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leer en Voz Alta (TTS)" />
+
+        <Button
+            android:id="@+id/buttonSTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Grabar y Analizar (STT)" />
+
+        <TextView
+            android:id="@+id/textViewTranscription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Transcripción aparecerá aquí..."
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/textViewPrecision"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precisión: ..."
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewFluency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fluidez: ..."
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
